@@ -13,9 +13,24 @@ public class Calculator{
         int num2 = scanner.nextInt();
 
 
-        int result = num1 + num2;
-        System.out.println("The result of " + num1 + " + " + num2 + " is: " + result);
+        System.out.print("Choose an operation (1 for addition, 2 for subtraction): ");
+        int operationChoice = scanner.nextInt();
 
+        // Perform the selected operation
+        int result;
+        if (operationChoice == 1) {
+            // Addition
+            result = num1 + num2;
+            System.out.println("You chose addition. The result is: " + result);
+        } else if (operationChoice == 2) {
+            // Subtraction
+            result = num1 - num2;
+            System.out.println("You chose subtraction. The result is: " + result);
+        } else {
+            System.out.println("Invalid operation choice. Please choose 1 for addition or 2 for subtraction.");
+        }
+
+        // Close the Scanner
         scanner.close();
     }
 }
