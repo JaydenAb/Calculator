@@ -52,7 +52,7 @@ public class Calculator{
                     result = (double) num1 / num2;
                     System.out.println("You chose division. The result is: " + result);
                 } else {
-                    System.out.println("Cannot divide by zero. Please enter a non-zero second number.");
+                    System.out.println("Error: Divide by Zero.");
                 }
                 break;
             default:
